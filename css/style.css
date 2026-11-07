@@ -248,3 +248,16 @@ main section:nth-child(2) article:hover {
     color: #000000;
     border-color: #FFFFFF;
 }
+main section:nth-child(2) article img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    background-color: #10121C;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+.link-jogo {
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
