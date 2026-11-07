@@ -150,3 +150,62 @@ main section:nth-child(2) article {
 main section:nth-child(2) article:hover {
     transform: translateY(-5px);
 }
+
+@media (max-width: 768px) {
+    header {
+        padding: 20px 5%;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    main {
+        padding: 30px 5%;
+    }
+
+    main section:nth-child(2) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    main section:first-child {
+        padding: 50px 20px;
+    }
+
+    main section:first-child h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav h1 a {
+        font-size: 50px;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    main section:nth-child(2) {
+        grid-template-columns: 1fr;
+    }
+
+    main section:first-child h2 {
+        font-size: 26px;
+    }
+
+    main section:first-child p {
+        font-size: 16px;
+    }
+}
