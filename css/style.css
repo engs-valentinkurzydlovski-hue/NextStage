@@ -16,20 +16,24 @@ header {
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
 }
 
 nav h1 {
-    color: #8055E8;
-    font-size: 28px;
+    justify-self: start;
 }
 
 nav ul {
     display: flex;
     list-style: none;
     gap: 30px;
+    justify-content: center;
+}
+
+#botaoContraste {
+    justify-self: end;
 }
 
 nav a {
@@ -135,10 +139,14 @@ main section:nth-child(2) article:hover {
 }
 nav h1 a {
     display: inline-block;
-    color: inherit;
+    color: #8055E8;
     text-decoration: none;
     font-size: 50px;
     cursor: pointer;
+}
+
+nav h1 a:hover {
+    color: #FFFFFF;
 }
 
 main section:nth-child(2) article {
@@ -211,7 +219,8 @@ main section:nth-child(2) article:hover {
 #botaoContraste {
     background-color: #8055E8;
     color: #FFFFFF;
-    border: 2px solid #FFFFFF;
+    border: none;
+    outline: none;
     padding: 10px 15px;
     border-radius: 6px;
     cursor: pointer;
@@ -259,4 +268,55 @@ main section:nth-child(2) article img {
     text-decoration: none;
     display: block;
     cursor: pointer;
+}
+.banner-container {
+    width: 100%;
+    margin: 20px 0;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.banner {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+    display: block;
+    border-radius: 20px;
+}
+.espaco-vazio {
+    display: none;
+}
+.chamada-plataformas {
+    text-align: center;
+    background-color: transparent;
+    padding: 40px 20px;
+    margin-top: 40px;
+}
+
+.chamada-plataformas h2 {
+    color: #8055E8;
+    margin-bottom: 15px;
+}
+
+.chamada-plataformas p {
+    color: #CCCCCC;
+    margin-bottom: 25px;
+}
+
+.chamada-plataformas a {
+    display: inline-block;
+    background-color: #8055E8;
+    color: #FFFFFF;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.chamada-plataformas a:hover {
+    background-color: #6940CC;
+}
+main section.apresentacao {
+    background-color: transparent;
+    padding: 40px 0;
+    border-radius: 0;
 }
