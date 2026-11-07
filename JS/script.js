@@ -1,4 +1,3 @@
-
 const botao = document.getElementById("botaoContraste");
 
 botao.addEventListener("click", function() {
