@@ -164,9 +164,18 @@ main section:nth-child(2) article:hover {
     }
 
     nav {
-        flex-direction: column;
-        gap: 20px;
-    }
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 20px;
+}
+
+nav h1 {
+    justify-self: center;
+}
+
+#botaoContraste {
+    justify-self: center;
+}
 
     nav ul {
         gap: 20px;
