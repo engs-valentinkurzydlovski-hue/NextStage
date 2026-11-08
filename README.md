@@ -19,7 +19,7 @@ Os jogos e plataformas foram organizados em cards para facilitar a visualizaçã
 
 ## Acesso ao site
 
-[ Acesse o NextStage ](COLOQUE_AQUI_O_LINK_DO_GITHUB_PAGES)
+[ Acesse o NextStage ](https://engs-valentinkurzydlovski-hue.github.io/NextStage/)
 
 ## Tarefas realizadas
 
